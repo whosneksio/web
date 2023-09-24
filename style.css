@@ -260,6 +260,10 @@ a {
         padding-left: 5%;
     }
 
+    .about-me {
+        max-width: 300px;
+    }
+
     .navbar {
         display: none; /* Hide menu items on small screens */
     }
@@ -271,7 +275,7 @@ a {
     }
 
     .project-card {
-        width: 300px; /* Make cards full width */
+        max-width: 300px; /* Make cards full width */
         margin-bottom: 12.5px; /* Add gap between cards */
     }
 
@@ -295,6 +299,10 @@ a {
 
     .gap {
         display: none;
+    }
+
+    .projects {
+        padding-left: 5%;
     }
 
 }
