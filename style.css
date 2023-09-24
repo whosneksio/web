@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+html {
+    --tw-text-opacity: 1;
+    --tw-bg-opacity: 1;
+    background-color: #171717;
+    background-size:90px 90px;
+        background-image: linear-gradient(90deg,rgba(38,38,38,.5) 1px,transparent 0),linear-gradient(180deg,rgba(38,38,38,.5) 1px,transparent 0);
+        --tw-bg-opacity: 1;
+        background-color: rgb(23 23 23/var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+    font-family: Inter;
+    scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+    height: 8px;
+    width: 8px
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: #404040;
+}
+
+html ::-webkit-scrollbar-track {
+    background-color: #262626
+}
+
+
+.navbar-item {
+    color: hsla(0,0%,100%,.9);
+    font-size: 17.5px; 
+}
+
+
+.header {
+    padding-top: 175px;
+    padding-left: 15%;
+    padding-bottom: 20px;
+}
+
+.discord-status {
+    padding-bottom: 7.5px;
+    font-weight: 300;
+    color: hsla(0,0%,100%,.5);
+}
+
+.spotify-song {
+    padding-bottom: 7.5px;
+    font-weight: 300;
+    color: hsla(0,0%,100%,.5);
+}
+
+.greetings {
+    font-size: 75px;
+    font-weight: 500;
+    color: hsla(0,0%,100%,.9);
+    padding-bottom: 3.25px;
+}
+
+.about-me {
+    font-weight: 300;
+    color: hsla(0,0%,100%,.5);
+    max-width: 525px;
+}
+
+.tech-card-base {
+    transition: 0.3s;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 0.35rem;
+    padding: 10px;
+    background-color: rgba(38,38,38,.3);
+    border: 1.25px solid rgba(38,38,38,.5);
+    color: hsla(0,0%,100%,.8);
+    color: rgba(255,255,255,0.8);
+}
+
+.tech-card-base:hover {
+    transition: 0.3s;
+    background-color: rgba(38,38,38,.4);
+    color: hsla(0,0%,100%,1);
+}
+
+.card-gap {
+    margin-bottom: 7.5px;
+}
+
+.tech-card {
+    width: 25px;
+    height: 25px;
+}
+
+.tech-img {
+    position: center;
+    width: 25px;
+    height: 25px;
+}
+
+.technologies {
+    padding-bottom: 7.5%;
+    padding-left: 15%;
+    display: inline-block;
+}
+
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+
+.navbar {
+    color: hsla(0,0%,100%,.8);
+    color: rgba(255,255,255,0.8);
+    display: inline-block;
+}
+
+.navbar-item {
+    color: hsla(0,0%,100%,.8);
+    color: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 20px;
+}
+
+.project-card {
+    transition: 0.3s;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 0.35rem;
+    padding: 15px;
+    background-color: rgba(38,38,38,.3);
+    border: 1.25px solid rgba(38,38,38,.5);
+    color: hsla(0,0%,100%,.8);
+    color: rgba(255,255,255,0.8);
+    width: 325px;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+}
+
+.socials-card {
+    transition: 0.3s;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 0.35rem;
+    padding: 15px;
+    background-color: rgba(38,38,38,.3);
+    border: 1.25px solid rgba(38,38,38,.5);
+    color: hsla(0,0%,100%,.8);
+    color: rgba(255,255,255,0.8);
+    width: 325px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.project-text {
+    padding-bottom: 7.5%;
+    padding-left: 15%;
+    color: hsla(0,0%,100%,.9);
+}
+
+.socials-text {
+    padding-bottom: 7.5%;
+    padding-left: 15%;
+    color: hsla(0,0%,100%,.9);
+}
+
+.projects {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-bottom: 5%;
+}
+
+.project-image {
+    border-radius: 0.35rem;
+    height: 80px;
+    width: 80px;
+}
+
+.project-title {
+    font-size: 17px;
+    font-weight: 400;
+    position: absolute; /* Position the text absolutely within the container */
+    top: 5px; /* Position it at the top */
+    left: 95px; /* Position it at the left */
+    color: rgba(255,255,255,0.8);
+    padding: 10px; /* Add padding for spacing */
+}
+
+.project-description {
+    color: hsla(0,0%,100%,.5);
+    font-weight: 300;
+    position: absolute; /* Position the text absolutely within the container */
+    top: 26.75px; /* Position it at the top */
+    left: 95px; /* Position it at the left */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 14px;
+}
+
+.technologies-text {
+    padding-bottom: 7.5%;
+    padding-left: 15%;
+    color: hsla(0,0%,100%,.9);
+}
+
+.technologies-card {
+    transition: 0.3s;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 0.35rem;
+    padding: 15px;
+    background-color: rgba(38,38,38,.3);
+    border: 1.25px solid rgba(38,38,38,.5);
+    color: hsla(0,0%,100%,.8);
+    color: rgba(255,255,255,0.8);
+    width: 250px;
+    height: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.gap {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    
+}
+
+
+.tech-desc {
+    position: absolute; /* Position the text absolutely within the container */
+    top: 7px; /* Position it at the top */
+    left: 40px; /* Position it at the left */
+    color: rgba(255,255,255,0.8);
+    padding: 10px; /* Add padding for spacing */
+}
+
+.mobile-menu-button {
+    display: none; /* Hide the button by default */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+/* Media query for small screens (e.g., phones) */
+@media screen and (max-width: 1200px) {
+
+    .header {
+        padding-top: 7.5%;
+        padding-left: 5%;
+    }
+
+    .navbar {
+        display: none; /* Hide menu items on small screens */
+    }
+
+    .technologies-card {
+        width: 300px; /* Make cards full width */
+        padding-left: 5%;
+        margin-bottom: 12.5px; /* Add gap between cards */
+    }
+
+    .project-card {
+        width: 300px; /* Make cards full width */
+        margin-bottom: 12.5px; /* Add gap between cards */
+    }
+
+    .projects {
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    .technologies-text {
+        padding-left: 5%;
+    }
+
+    .project-text {
+        padding-left: 5%;
+    }
+
+    .technologies {
+        padding-left: 5%;
+    }
+
+    .gap {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
