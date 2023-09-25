@@ -8,14 +8,9 @@
     --text-color: #e4e4e4;
 }
 
-a, .tech-img {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+a { 
+    all: unset;
+    cursor: pointer;
 }
 
 html {
@@ -30,11 +25,11 @@ html ::-webkit-scrollbar {
 }
 
 html ::-webkit-scrollbar-thumb {
-    background-color: #404040;
+    background-color: var(--secondary-background-color);
 }
 
 html ::-webkit-scrollbar-track {
-    background-color: #262626
+    background-color: var(--primary-background-color);
 }
 
 .tippy-box[data-theme~=ws] {
@@ -42,13 +37,6 @@ html ::-webkit-scrollbar-track {
     background: var(--secondary-background-color);
     border: 1px solid var(--fff-background-color)
 }
-
-
-.navbar-item {
-    color: hsla(0,0%,100%,.9);
-    font-size: 17.5px; 
-}
-
 
 .header {
     font-weight: 600;
@@ -91,11 +79,10 @@ html ::-webkit-scrollbar-track {
     max-width: 525px;
 }
 
-.app-cont {
-    margin-top: -4.5%;
-}
 
-.tech-card-base {
+.social-card {
+    width: 25px;
+    height: 25px;
     transition: 0.3s;
     margin-right: 5px;
     display: inline-block;
@@ -106,59 +93,31 @@ html ::-webkit-scrollbar-track {
     color: var(--text-color);
 }
 
-.tech-card-base:hover {
+.social-card:hover {
+    cursor: pointer;
     transition: 0.3s;
     background-color: var(--tertiary-background-color);
 }
 
-.card-gap {
-    margin-bottom: 7.5px;
-}
-
-.tech-card {
+.svg {
     width: 25px;
     height: 25px;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
 }
 
-.tech-img {
-    width: 25px;
-    height: 25px;
-}
-
-.tech1 {
+.tech-card-display {
     float: left;
 }
 
-.technologies {
+.socials {
     padding-bottom:10%;
     padding-left: 20%;
     display: inline-block;
-}
-
-
-a {
-    all: unset;
-    cursor: pointer;
-}
-
-
-.navbar {
-    color: hsla(0,0%,100%,.8);
-    color: rgba(255,255,255,0.8);
-    display: inline-block;
-}
-
-.navbar-item {
-    transition: 0.3s;
-    color: hsla(0,0%,100%,.8);
-    color: rgba(255,255,255,0.8);
-    display: inline-block;
-    padding: 20px;
-}
-
-.navbar-item:hover {
-    transition: 0.3s;
-    color: hsla(0,0%,100%,.5);
 }
 
 .project-card {
@@ -176,34 +135,13 @@ a {
     display: inline-block;
 }
 
-.socials-card {
-    transition: 0.3s;
-    margin-right: 5px;
-    display: inline-block;
-    border-radius: 0.375rem;
-    padding: 15px;
-    background-color: var(--secondary-background-color);
-    border: 1px solid var(--fff-background-color);
-    color: var(--text-color);
-    width: 325px;
-    height: 30px;
-    position: relative;
-    display: inline-block;
-}
-
 .project-text {
     padding-bottom: 7.5%;
     padding-left: 20%;
     color: hsla(0,0%,100%,.9);
 }
 
-.socials-text {
-    padding-bottom: 7.5%;
-    padding-left: 20%;
-    color: hsla(0,0%,100%,.9);
-}
-
-.projects {
+.container {
     padding-top: 20px;
     padding-left: 20%;
     padding-bottom: 5%;
@@ -214,28 +152,37 @@ a {
     font-size: 17.5px;
     padding-top: 15px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
 }
 
 .project-description {
     font-size: 15px;
-    color: hsla(0, 0%, 100%, 0.5);
+    color: var(--text-color);
+    opacity: 0.5;;
     font-weight: 300;
 }
 
 .technologies-text {
     padding-bottom: 7.5%;
     padding-left: 20%;
-    color: hsla(0,0%,100%,.9);
+    color: var(--text-color);
 }
 
 .tech-sub {
     font-size: .875rem;
-    color: hsla(0,0%,100%,.5);
+    color: var(--text-color);
+    opacity: 0.5;
 }
 
 .arrow {
+    cursor: pointer;
+    transition: 0.3s;
     float: right;
+}
+
+.arrow:hover {
+    transition: 0.3s;
+    rotate: 90deg;
 }
 
 .technologies-card {
@@ -259,29 +206,14 @@ a {
     background-color: var(--tertiary-background-color);
 }
 
-#more {
-    cursor: pointer;
-}
-
-@media screen and (max-width: 1200px) {
-
-    
-}
-
-
-.tech-desc {
-    position: absolute; /* Position the text absolutely within the container */
-    top: 7px; /* Position it at the top */
-    left: 40px; /* Position it at the left */
+.tech-card-desc {
+    position: absolute;
+    top: 7px; 
+    left: 40px; 
     color: rgba(255,255,255,0.8);
-    padding: 10px; /* Add padding for spacing */
+    padding: 10px; 
 }
 
-.mobile-menu-button {
-    display: none; /* Hide the button by default */
-    cursor: pointer;
-    padding: 10px;
-}
 
 .bar {
     width: 30px;
@@ -290,8 +222,6 @@ a {
     margin: 6px 0;
 }
 
-
-/* Media query for small screens (e.g., phones) */
 @media screen and (max-width: 1200px) {
 
     .header {
@@ -303,22 +233,19 @@ a {
         max-width: 300px;
     }
 
-    .navbar {
-        display: none; /* Hide menu items on small screens */
-    }
 
     .technologies-card {
-        width: 300px; /* Make cards full width */
+        width: 300px; 
         padding-left: 5%;
-        margin-bottom: 12.5px; /* Add gap between cards */
+        margin-bottom: 12.5px; 
     }
 
     .project-card {
-        max-width: 300px; /* Make cards full width */
-        margin-bottom: 12.5px; /* Add gap between cards */
+        max-width: 300px;
+        margin-bottom: 12.5px; 
     }
 
-    .projects {
+    .container {
         padding-top: 20px;
         padding-left: 10%;
         padding-bottom: 5%;
@@ -336,11 +263,11 @@ a {
         padding-left: 5%;
     }
 
-    .gap {
-        display: none;
+    .container {
+        padding-left: 5%;
     }
 
-    .projects {
+    .socials {
         padding-left: 5%;
     }
 
