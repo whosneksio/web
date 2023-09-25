@@ -69,12 +69,4 @@ webSocket.addEventListener("message", (event) => {
     }
 });
 
-const clickableDiv = document.getElementById('more');
-
-clickableDiv.addEventListener('click', function () {
-    const destinationUrl = 'https://github.com/whosneksio'; 
-    
-    window.location.href = destinationUrl;
-});
-
 
