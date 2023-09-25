@@ -8,6 +8,16 @@
     --text-color: #e4e4e4;
 }
 
+a, .tech-img {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 html {
     background-color: var(--primary-background-color);
     font-family: Inter;
@@ -224,6 +234,10 @@ a {
     color: hsla(0,0%,100%,.5);
 }
 
+.arrow {
+    float: right;
+}
+
 .technologies-card {
     margin-bottom: 7.5px;
     transition: 0.3s;
@@ -238,6 +252,11 @@ a {
     height: 25px;
     position: relative;
     display: inline-block;
+}
+
+.technologies-card:hover {
+    transition: 0.3s;
+    background-color: var(--tertiary-background-color);
 }
 
 #more {

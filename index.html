@@ -44,6 +44,7 @@
         <span class="project-text">PROJECTS</span>
         <div class="projects">
             <div class="project-card">
+                <a href="https://github.com/whosneksio/web"><svg id="github-repo" class="tech-img arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#e4e4e4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>            </a>
                 <span class="project-title">website</span>
                 <br>
                 <br>
@@ -114,6 +115,18 @@ tippy('#more', {
   content: 'More',
   animation: 'scale',
   placement: 'bottom',
+  theme: 'ws',
+  inertia: true,
+  interactive: false,
+  allowHTML: true,
+  followCursor: false,
+  arrow: false
+});
+
+tippy('#github-repo', {
+  content: 'Go to repository',
+  animation: 'scale',
+  placement: 'top',
   theme: 'ws',
   inertia: true,
   interactive: false,
