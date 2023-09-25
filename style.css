@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+:root {
+    --primary-background-color: #151519;
+    --secondary-background-color: #19191d;
+    --tertiary-background-color: #1c1c21;
+    --fff-background-color: #222228;
+    --text-color: #e4e4e4;
+}
 
 html {
-    background-color: #171717;
+    background-color: var(--primary-background-color);
     font-family: Inter;
     scroll-behavior: smooth;
 }
@@ -19,6 +27,12 @@ html ::-webkit-scrollbar-track {
     background-color: #262626
 }
 
+.tippy-box[data-theme~=ws] {
+    color: var(--text-color);
+    background: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color)
+}
+
 
 .navbar-item {
     color: hsla(0,0%,100%,.9);
@@ -27,33 +41,43 @@ html ::-webkit-scrollbar-track {
 
 
 .header {
+    font-weight: 600;
     padding-top: 175px;
     padding-left: 20%;
     padding-bottom: 20px;
 }
 
+.color-text {
+    background-image: linear-gradient(to right, #00b47e, #00a2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .discord-status {
     padding-bottom: 7.5px;
     font-weight: 300;
-    color: hsla(0,0%,100%,.5);
+    color: var(--text-color);
+    opacity: .8;
 }
 
 .spotify-song {
     padding-bottom: 7.5px;
-    font-weight: 300;
-    color: hsla(0,0%,100%,.5);
+    font-weight: normal;
+    color: var(--text-color);
+    opacity: .8;
 }
 
 .greetings {
     font-size: 75px;
     font-weight: 600;
-    color: hsla(0,0%,100%,.9);
+    color: var(--text-color);
     padding-bottom: 3.25px;
 }
 
 .about-me {
     font-weight: 300;
-    color: hsla(0,0%,100%,.5);
+    color: var(--text-color);
+    opacity: .8;
     max-width: 525px;
 }
 
@@ -65,18 +89,16 @@ html ::-webkit-scrollbar-track {
     transition: 0.3s;
     margin-right: 5px;
     display: inline-block;
-    border-radius: 0.375rem;
+    border-radius: 8px;
     padding: 10px;
-    background-color: rgba(38,38,38,.3);
-    border: 1.25px solid rgba(38,38,38,.5);
-    color: hsla(0,0%,100%,.8);
-    color: rgba(255,255,255,0.8);
+    background-color: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    color: var(--text-color);
 }
 
 .tech-card-base:hover {
     transition: 0.3s;
-    background-color: rgba(38,38,38,.4);
-    color: hsla(0,0%,100%,1);
+    background-color: var(--tertiary-background-color);
 }
 
 .card-gap {
@@ -131,15 +153,14 @@ a {
 
 .project-card {
     transition: 0.3s;
-    margin-right: 5px;
+    margin-bottom: 20px;
     display: inline-block;
     border-radius: 0.375rem;
     padding: 15px;
-    background-color: rgba(38,38,38,.3);
-    border: 1.25px solid rgba(38,38,38,.5);
-    color: hsla(0,0%,100%,.8);
-    color: rgba(255,255,255,0.8);
-    width: 325px;
+    background-color: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    color: var(--text-color);
+    width: 450px;
     height: 80px;
     position: relative;
     display: inline-block;
@@ -151,10 +172,9 @@ a {
     display: inline-block;
     border-radius: 0.375rem;
     padding: 15px;
-    background-color: rgba(38,38,38,.3);
-    border: 1.25px solid rgba(38,38,38,.5);
-    color: hsla(0,0%,100%,.8);
-    color: rgba(255,255,255,0.8);
+    background-color: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    color: var(--text-color);
     width: 325px;
     height: 30px;
     position: relative;
@@ -180,30 +200,17 @@ a {
     max-width: 1250px;
 }
 
-.project-image {
-    border-radius: 0.375rem;
-    height: 80px;
-    width: 80px;
-}
-
 .project-title {
-    font-size: 17px;
+    font-size: 17.5px;
+    padding-top: 15px;
     font-weight: 400;
-    position: absolute; /* Position the text absolutely within the container */
-    top: 5px; /* Position it at the top */
-    left: 95px; /* Position it at the left */
-    color: rgba(255,255,255,0.8);
-    padding: 10px; /* Add padding for spacing */
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .project-description {
-    color: hsla(0,0%,100%,.5);
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.5);
     font-weight: 300;
-    position: absolute; /* Position the text absolutely within the container */
-    top: 26.75px; /* Position it at the top */
-    left: 95px; /* Position it at the left */
-    padding: 10px; /* Add padding for spacing */
-    font-size: 14px;
 }
 
 .technologies-text {
@@ -224,10 +231,9 @@ a {
     display: inline-block;
     border-radius: 0.375rem;
     padding: 15px;
-    background-color: rgba(38,38,38,.3);
-    border: 1.25px solid rgba(38,38,38,.5);
-    color: hsla(0,0%,100%,.8);
-    color: rgba(255,255,255,0.8);
+    background-color: var(--secondary-background-color);
+    border: 1px solid var(--fff-background-color);
+    color: var(--text-color);
     width: 250px;
     height: 25px;
     position: relative;
