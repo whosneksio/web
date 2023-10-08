@@ -209,7 +209,6 @@ html ::-webkit-scrollbar-track {
 .tech-card-desc {
     position: absolute;
     top: 7px; 
-    left: 40px; 
     color: rgba(255,255,255,0.8);
     padding: 10px; 
 }
